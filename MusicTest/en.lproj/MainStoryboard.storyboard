@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11C74" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+    <dependencies>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="5">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="480" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Vbg-yU-A1l">
+                                <rect key="frame" x="6" y="7" width="72" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickedStartButton:" destination="2" eventType="touchUpInside" id="Z00-CR-IvX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QaX-PN-z5R">
+                                <rect key="frame" x="86" y="7" width="72" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickedStopButton:" destination="2" eventType="touchUpInside" id="JIM-al-SXf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="72" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="HBJ-j9-0z1">
+                                <rect key="frame" x="1" y="161" width="36" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.9588448660714286" green="0.9588448660714286" blue="0.9588448660714286" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchUpInside" id="UgH-M6-dHD"/>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDown" id="pZn-kw-Gef"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchDragExit" id="ALh-6k-Kmp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="74" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="esz-dg-hbz">
+                                <rect key="frame" x="40" y="161" width="36" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.9588448660714286" green="0.9588448660714286" blue="0.9588448660714286" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDown" id="j0U-ox-SGz"/>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDragEnter" id="qOF-eJ-NBa"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchDragExit" id="kuK-n8-Pav"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchUpInside" id="wXA-YP-mUw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="76" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="f9t-lQ-xK0">
+                                <rect key="frame" x="79" y="161" width="36" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.9588448660714286" green="0.9588448660714286" blue="0.9588448660714286" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDown" id="Pnw-W8-Ine"/>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDragEnter" id="pOc-gn-MDP"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchUpInside" id="99R-ef-C3p"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchDragExit" id="qWr-vr-vDy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="77" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="A2M-2I-BAw">
+                                <rect key="frame" x="118" y="161" width="36" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.9588448660714286" green="0.9588448660714286" blue="0.9588448660714286" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDragEnter" id="kgM-vv-ea1"/>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDown" id="qTX-Ib-bgB"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchUpInside" id="2Ab-Hg-0b9"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchDragExit" id="iln-sD-sj2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="79" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="34N-rV-daT">
+                                <rect key="frame" x="157" y="161" width="36" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.9588448660714286" green="0.9588448660714286" blue="0.9588448660714286" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDragEnter" id="7De-vu-gIE"/>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDown" id="k16-eg-f7m"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchUpInside" id="9T6-ML-992"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchDragExit" id="Q9L-ab-A4l"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchUpOutside" id="hJS-7X-0Jt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="81" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SiY-4f-B7j">
+                                <rect key="frame" x="196" y="161" width="36" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.9588448660714286" green="0.9588448660714286" blue="0.9588448660714286" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDragEnter" id="7mk-pT-pZH"/>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDown" id="vBg-ZO-Rlq"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchUpInside" id="bpy-e7-bxe"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchDragExit" id="tF0-5s-WBK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="83" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FB9-Vx-fyF">
+                                <rect key="frame" x="235" y="161" width="36" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.9588448660714286" green="0.9588448660714286" blue="0.9588448660714286" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDown" id="Pon-L4-X2x"/>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDragEnter" id="rlj-oz-aIb"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchDragExit" id="NvW-eY-OWA"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchUpInside" id="ZPu-v2-fHF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="84" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Css-t6-7UJ">
+                                <rect key="frame" x="274" y="161" width="36" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.9588448660714286" green="0.9588448660714286" blue="0.9588448660714286" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDragEnter" id="d9B-oM-SMo"/>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDown" id="rY9-jV-G2X"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchUpInside" id="TkC-o8-x6O"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchDragExit" id="hy2-LF-LA8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="73" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9EG-UI-cXC">
+                                <rect key="frame" x="25" y="161" width="30" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDown" id="LuF-x5-zaH"/>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDragEnter" id="hLI-7r-dsk"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchUpInside" id="RkL-ZX-rZA"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchDragExit" id="jye-S3-7so"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CVM-Ec-6jP">
+                                <rect key="frame" x="63" y="161" width="30" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDragEnter" id="BRv-fz-fc9"/>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDown" id="SPc-Fw-rjo"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchUpInside" id="tVe-iy-T0x"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchDragExit" id="u8x-dw-1vh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="86" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hxv-u7-vsB">
+                                <rect key="frame" x="313" y="161" width="36" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95884486609999997" green="0.95884486609999997" blue="0.95884486609999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDown" id="1Y1-Dv-9iL"/>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDragEnter" id="qak-5L-J0h"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchDragExit" id="Woe-WU-g5X"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchUpInside" id="adh-vs-Kgc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="88" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZKm-RX-Nv8">
+                                <rect key="frame" x="352" y="161" width="36" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95884486609999997" green="0.95884486609999997" blue="0.95884486609999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDown" id="rcK-vd-6g9"/>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDragEnter" id="sNa-qv-gY6"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchUpInside" id="aVW-bk-wus"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchDragExit" id="l7l-o1-GDZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="89" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="A47-nu-fZY">
+                                <rect key="frame" x="391" y="161" width="36" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95884486609999997" green="0.95884486609999997" blue="0.95884486609999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDragEnter" id="5ZF-z2-6B8"/>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDown" id="950-kY-m38"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchDragExit" id="Rkv-ut-CaC"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchUpInside" id="XcX-yP-gIr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="85" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="N4H-GK-GiD">
+                                <rect key="frame" x="298" y="161" width="30" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDown" id="ChE-5C-Uui"/>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDragEnter" id="kOZ-wW-1e5"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchDragExit" id="RVD-1W-lOy"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchUpInside" id="mh0-Cy-Db3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="87" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EXG-1W-S7S">
+                                <rect key="frame" x="336" y="161" width="30" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDragEnter" id="EEv-z7-m0e"/>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDown" id="F6O-ph-WCo"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchUpInside" id="HIt-e5-0Cf"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchDragExit" id="SZT-Qq-URT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="78" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QYo-g2-OYB">
+                                <rect key="frame" x="140" y="161" width="30" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDragEnter" id="81S-J9-aV8"/>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDown" id="XbW-4x-rIW"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchDragExit" id="QNT-nc-8vc"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchUpInside" id="dpg-Au-htE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="91" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vc2-zb-vcH">
+                                <rect key="frame" x="430" y="161" width="36" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95884486609999997" green="0.95884486609999997" blue="0.95884486609999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDragEnter" id="3Kg-hX-7gq"/>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDown" id="kTU-IW-i38"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchUpInside" id="H8d-Rp-ySR"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchDragExit" id="QH7-HH-q3z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="93" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YKA-Sp-ie8">
+                                <rect key="frame" x="469" y="161" width="36" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95884486609999997" green="0.95884486609999997" blue="0.95884486609999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDragEnter" id="AVD-rM-1VD"/>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDown" id="glB-uk-xoa"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchUpInside" id="Ptk-vC-qZi"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchDragExit" id="idp-D9-Ys9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="90" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="h12-tZ-Jta">
+                                <rect key="frame" x="413" y="161" width="30" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDragEnter" id="QRe-Gp-qx0"/>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDown" id="Ycp-VS-QFJ"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchDragExit" id="Hvt-Oq-Bjn"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchUpInside" id="p2a-mm-5kb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="92" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aPB-2c-aEn">
+                                <rect key="frame" x="450" y="161" width="30" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDragEnter" id="GQf-1S-2Jm"/>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDown" id="se7-bI-SrC"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchDragExit" id="0m4-cT-4GJ"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchUpInside" id="QnJ-gK-9fB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="80" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7N3-yv-eIv">
+                                <rect key="frame" x="179" y="161" width="30" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDragEnter" id="8Pf-QT-y0Q"/>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDown" id="Rvf-s2-vj6"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchDragExit" id="aKn-jH-Ggv"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchUpInside" id="pqZ-D9-KuR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="82" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="j6c-2h-1By">
+                                <rect key="frame" x="220" y="161" width="30" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDown" id="Pc2-lS-IzB"/>
+                                    <action selector="startPlayMidNote:" destination="2" eventType="touchDragEnter" id="YSf-Bj-AeC"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchDragExit" id="A18-lk-b3y"/>
+                                    <action selector="stopPlayMidNote:" destination="2" eventType="touchUpInside" id="jKM-Fy-KWz"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" tag="2" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="35" sectionHeaderHeight="22" sectionFooterHeight="22" id="cRS-ac-0QG">
+                                <rect key="frame" x="245" y="52" width="230" height="100"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell tag="2" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SongCell" textLabel="v8P-8M-VEU" style="IBUITableViewCellStyleDefault" id="xkz-c0-4rh">
+                                        <rect key="frame" x="0.0" y="22" width="230" height="35"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="230" height="34"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="v8P-8M-VEU">
+                                                    <rect key="frame" x="10" y="0.0" width="210" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="2" id="yow-oO-uN3"/>
+                                    <outlet property="delegate" destination="2" id="XLa-wb-Lxw"/>
+                                </connections>
+                            </tableView>
+                            <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="35" sectionHeaderHeight="22" sectionFooterHeight="22" id="fIX-Wk-J5U">
+                                <rect key="frame" x="7" y="52" width="230" height="100"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SongCell" textLabel="Gxq-1e-47g" style="IBUITableViewCellStyleDefault" id="D4s-IV-Q3P">
+                                        <rect key="frame" x="0.0" y="22" width="230" height="35"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="230" height="34"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gxq-1e-47g">
+                                                    <rect key="frame" x="10" y="0.0" width="210" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="2" id="wc1-e5-nvq"/>
+                                    <outlet property="delegate" destination="2" id="6HM-HZ-NH3"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="startButton" destination="Vbg-yU-A1l" id="lmC-Kj-A9l"/>
+                        <outlet property="stopButton" destination="QaX-PN-z5R" id="ho5-kX-IcE"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="156" y="131"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="clickedLoadPreset:" candidateClass="UIButton"/>
+                <relationship kind="action" name="clickedStartButton:" candidateClass="UIButton"/>
+                <relationship kind="action" name="clickedStopButton:" candidateClass="UIButton"/>
+                <relationship kind="action" name="startPlayHighNote:" candidateClass="UIButton"/>
+                <relationship kind="action" name="startPlayLowNote:" candidateClass="UIButton"/>
+                <relationship kind="action" name="startPlayMidNote:" candidateClass="UIButton"/>
+                <relationship kind="action" name="stopPlayHighNote:" candidateClass="UIButton"/>
+                <relationship kind="action" name="stopPlayLowNote:" candidateClass="UIButton"/>
+                <relationship kind="action" name="stopPlayMidNote:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="currentPresetLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="startButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="stopButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
